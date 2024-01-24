@@ -12,7 +12,7 @@ function User() {
   }, []);
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:3001/delete" + id)
+      .delete("http://localhost:3001/deleteUser/"+id)
       .then((res) => {
         console.log(res);
         window.location.reload();
@@ -43,7 +43,7 @@ function User() {
                   <td>{user.ID}</td>
                   <td>{user.Name}</td>
                   <td>{user.Price}</td>
-                  <td>{user.Descripiton}</td>
+                  <td>{user.Description}</td>
                   <td>
                     <Link to={`/update/${user._id}`} className="btn btn-success">
                       Update
