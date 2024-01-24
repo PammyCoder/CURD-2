@@ -1,0 +1,17 @@
+.main{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+
+  background: purple;
+}
+.submain{
+  width: 800px;
+  background: white;
+  /* border-radius: rounded; */
+  padding: 10px;
+}
+.btn btn-success{
+  background-color: green;
+}
